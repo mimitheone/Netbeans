@@ -23,7 +23,6 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TabPane;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
@@ -49,9 +48,6 @@ public class FXMLController implements Initializable {
     private void saveClient() throws FileNotFoundException, SQLException{
                  
         System.out.println((String)clientName.getText());
-        System.out.println((String)MOL.getText());
-        System.out.println((String)clientAddress.getText());
-        System.out.println((String)clientPhone.getText());
         String query = "INSERT INTO CUSTOMER VALUES(13,'" + clientName.getText()+ "','" + clientAddress.getText() + "')";
         SQLInserts.establishConnection(query);
         
