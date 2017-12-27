@@ -14,6 +14,7 @@
   <tabs>
     <Tab text="Поръчка">
       <content>
+          
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
                   <Label layoutX="27.0" layoutY="31.0" text="Номер на поръчка" />
