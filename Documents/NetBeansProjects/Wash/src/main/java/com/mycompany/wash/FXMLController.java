@@ -32,9 +32,6 @@ public class FXMLController implements Initializable {
     
     
     @FXML private TextField clientName;
-    @FXML private TextField MOL;
-    @FXML private TextField clientAddress;
-    @FXML private TextField clientPhone;
     @FXML private ComboBox <String> clientGetList;
     @FXML private ComboBox <String> clientGetListChoser;
     @FXML private TableColumn item;
@@ -48,13 +45,11 @@ public class FXMLController implements Initializable {
     private void saveClient() throws FileNotFoundException, SQLException{
                  
         System.out.println((String)clientName.getText());
-        String query = "INSERT INTO CUSTOMER VALUES(13,'" + clientName.getText()+ "','" + clientAddress.getText() + "')";
+        String query = "INSERT INTO CUSTOMER VALUES(13,'" + clientName.getText()+ "','')";
         SQLInserts.establishConnection(query);
         
         clientName.setText("");
-        MOL.setText("");
-        clientAddress.setText("");
-        clientPhone.setText("");
+      
        
     }
     
